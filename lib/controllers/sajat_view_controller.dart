@@ -2,6 +2,7 @@ import 'dart:math';
 
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
+import 'package:sajatgyak/views/timer_view.dart';
 
 class SajatViewController extends GetxController {
   List<String> RandomLista = [
@@ -31,13 +32,13 @@ class SajatViewController extends GetxController {
   void mutasd() {
     Get.dialog(
       CupertinoAlertDialog(
-        title: Text("Tessék♥", style: TextStyle(fontSize: 22)),
+        title: Text("♥Tessék♥", style: TextStyle(fontSize: 22)),
         content: Text(randomSzoveg(), style: TextStyle(fontSize: 18),),
         actions: [
           CupertinoDialogAction(
-            child: Text("Köszi♥"),
+            child: Text("♥Visszaszámláló♥"),
             onPressed: () {
-              Get.back();
+              Get.to(TimerView());
             },
           )
         ],
