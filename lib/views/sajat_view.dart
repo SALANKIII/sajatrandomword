@@ -13,7 +13,7 @@ class SajatView extends StatelessWidget {
       builder: (_) {
         return Scaffold(
           appBar: AppBar(
-            title: Center(child: Text("Random word")),
+            title: Center(child: Text("Random Szó")),
             backgroundColor: Colors.purple,
           ),
           body: Center(
@@ -24,10 +24,10 @@ class SajatView extends StatelessWidget {
                   child: Text("NYOMJ MEG"),
                   color: Colors.purple,
                   onPressed: () {
-                    controller.randomSzoveg();
+                    controller.mutasd();
                   },
                 ),
-                Text("Nekem: ${controller.randomSzoveg()}"),
+
               ],
             ),
           ),
